@@ -1,0 +1,57 @@
+$hheigth: 55px;
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 30px 5vw 100px 5vw;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .left {
+  display: flex;
+}
+
+.header .add-photo {
+  width: 137px;
+  height: $hheigth;
+  background: #3DB46D;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  color: white;
+}
+
+.header .logo {
+  background-image: url('/my_unsplash_logo.svg');
+  width: 170px;
+  height: $hheigth;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.header .search {
+  width: 300px;
+  height: $hheigth;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.1));
+  border-radius: 12px;
+  padding-left: 56px;
+  background-image: url('/magnify.svg');
+  background-repeat: no-repeat;
+  background-position: 20px center;
+}
+
+.header .search:focus {
+  outline: none;
+}
+
+.images {
+  margin-top: 40px;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 15px;
+}
