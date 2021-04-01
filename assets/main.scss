@@ -1,8 +1,10 @@
 $hheigth: 55px;
-.container {
-  width: 100vw;
-  min-height: 100vh;
+
+.container1 {
+  width: 100%;
+  min-height: 100%;
   padding: 30px 5vw 100px 5vw;
+  margin: 0;
 }
 
 .header {
@@ -15,7 +17,7 @@ $hheigth: 55px;
   display: flex;
 }
 
-.header .add-photo {
+.add-photo, .submit {
   width: 137px;
   height: $hheigth;
   background: #3DB46D;
@@ -52,6 +54,149 @@ $hheigth: 55px;
 .images {
   margin-top: 40px;
   display: grid;
-  column-gap: 10px;
-  row-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 46px;
+}
+
+.img {
+  margin-bottom: 46px;
+  position: relative;
+  cursor: pointer;
+}
+
+.img img {
+  border-radius: 16px;
+}
+
+.images .delete {
+  display: none;
+  position: absolute;
+  width: 82px;
+  height: 30px;
+  right: 0px;
+  top: 0px;
+  border: 1px solid #EB5757;
+  box-sizing: border-box;
+  border-radius: 38px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9em;
+  line-height: 12px;
+  text-transform: lowercase;
+  color: #EB5757;
+  margin: 20px 20px 0px 0px;
+}
+
+.images .title {
+  display: none;
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 22px;
+  color: #FFFFFF;
+  bottom: 0px;
+  margin: 0px 50px 30px 25px;
+}
+
+.img:hover .title, .img:hover .delete {
+  display: flex;
+}
+
+.add-new {
+  position: fixed;
+  width: 620px;
+  height: 367px;
+  left: calc(50vw - 310px);
+  top: calc(40vh - 183px);
+  background: #FFFFFF;
+  border-radius: 12px;
+  z-index: 20;
+  padding: 25px 35px 25px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.add-new {
+  position: fixed;
+  width: 620px;
+  height: 367px;
+  left: calc(50vw - 310px);
+  top: calc(40vh - 183px);
+  background: #FFFFFF;
+  border-radius: 12px;
+  z-index: 20;
+  padding: 25px 35px 25px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.add-new .title {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  color: #333333;
+}
+
+.label {
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #4F4F4F;
+}
+
+.text-input {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: $hheigth;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.1));
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.text-input:focus, button:focus{
+  outline: none;
+}
+
+.submit {
+  width: 105px;
+}
+
+.delete-button {
+  background: #EB5757;
+}
+
+.cancel {
+  width: 105px;
+  height: $hheigth;
+  color: #BDBDBD;
+}
+
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 19;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.delete-dialog {
+  height: 276.12px;
+}
+
+.wrong-border {
+  border-color: red;
 }
