@@ -80,5 +80,5 @@ $ yarn dev
 ## Contact
 
 - Website [altantur.me](https://altantur.me/)
-- GitHub [@your-username](https://github.com/altantur)
-- Twitter [@your-twitter](https://twitter.com/altantur)
+- GitHub [@altantur](https://github.com/altantur)
+- Twitter [@altantur](https://twitter.com/altantur)
