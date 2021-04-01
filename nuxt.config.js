@@ -16,7 +16,7 @@ export default {
       { name: 'twitter:creator', content: '@altantur' },
       { name: 'twitter:title', content: 'Unsplash your image here.' },
       { name: 'twitter:description', content: 'Dev Challenge unsplash.' },
-      { name: 'twitter:image', content: 'https://unsplash.altantur.me/demo.gif' },
+      { name: 'twitter:image', content: 'https://unsplash.altantur.me/unsplash.gif' },
       { hid: 'description', name: 'description', content: 'I am Altantur, here to help you.' }
     ],
     link: [
